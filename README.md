@@ -21,20 +21,6 @@ A rule‑based computer vision application built with **Python, OpenCV, and Stre
 
 ---
 
-## 📂 Project Structure
-```
-├── app.py                 # Main Streamlit app
-├── cam_handler.py         # Camera input logic
-├── pose_behavior.py       # Rule-based action detection
-├── emotion_engine.py      # Rule-based emotion detection
-├── dashboard_metrics.py   # Analytics & visualization
-├── assets/                # Icons, screenshots, demo GIFs
-├── requirements.txt       # Dependencies
-└── README.md              # Project description
-```
-
----
-
 ## ⚙️ How It Works
 1. **Camera Handler** captures frames from the webcam.  
 2. **Behavior Detector** applies heuristic rules to identify actions (e.g., walking, sitting).  
