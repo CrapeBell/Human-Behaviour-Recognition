@@ -1,23 +1,74 @@
-# Human-Behaviour-Recognition
-A rule-based computer vision application built with **Python, OpenCV, and Streamlit** that detects human actions (e.g., walking, sitting, waving) and emotions (e.g., happy, angry, surprised) in real time without relying on datasets or pre-trained models. The system leverages **logical heuristics and simulated inputs** to infer behaviors and facial expressions, making it lightweight, fast, and suitable for **low-resource environments** or **concept demonstrations**.
+# Human Behavior & Emotion Recognition System
 
-### Key Features
-- **Action Recognition**: Identifies basic human activities using pose-based heuristics.  
-- **Emotion Recognition**: Infers facial expressions through rule-based logic.  
-- **Dataset-Free**: Operates without training data or external models.  
-- **Interactive Dashboard**: Streamlit interface with animated UI, live camera feed, and analytics.  
-- **Analytics Module**: Tracks session statistics, FPS, behavior distribution, emotion distribution, and recent activity logs.  
+A rule‑based computer vision application built with **Python, OpenCV, and Streamlit** to detect human actions (walking, sitting, waving) and emotions (happy, angry, surprised) in real time **without datasets or pre‑trained models**. The system uses logical heuristics and simulated inputs, making it lightweight, fast, and ideal for **low‑resource environments, prototypes, and educational demonstrations**.
 
-### Tech Stack
+---
+
+## ✨ Features
+- Real‑time camera feed with pose & facial landmarks  
+- Rule‑based detection (no dataset required)  
+- Interactive Streamlit dashboard with animated UI  
+- Analytics: session stats, FPS, behavior & emotion distribution, recent activity log  
+- Exportable session data for further analysis  
+
+---
+
+## 🛠️ Tech Stack
 - Python  
 - OpenCV  
 - Streamlit  
 - Plotly & Pandas  
 
-### Use Cases
-- Educational demonstrations of computer vision concepts  
-- Proof-of-concept prototypes for behavior recognition  
-- Low-resource environments where datasets are unavailable  
+---
+
+## 📂 Project Structure
+```
+├── app.py                 # Main Streamlit app
+├── cam_handler.py         # Camera input logic
+├── pose_behavior.py       # Rule-based action detection
+├── emotion_engine.py      # Rule-based emotion detection
+├── dashboard_metrics.py   # Analytics & visualization
+├── assets/                # Icons, screenshots, demo GIFs
+├── requirements.txt       # Dependencies
+└── README.md              # Project description
+```
 
 ---
+
+## ⚙️ How It Works
+1. **Camera Handler** captures frames from the webcam.  
+2. **Behavior Detector** applies heuristic rules to identify actions (e.g., walking, sitting).  
+3. **Emotion Detector** analyzes facial features to infer emotions (e.g., happy, surprised).  
+4. **Landmark Overlay** draws pose and facial landmarks on the live feed for visualization.  
+5. **Analytics Tracker** records detections, calculates session stats, and generates charts.  
+6. The **Streamlit Dashboard** displays the live feed, current detections, confidence scores, and interactive analytics in real time.  
+
+---
+
+## 👩‍💻 Team Members
+- **Aakriti Mogha** — Project Lead, Computer Vision & Heuristic Design  
+- **Anamika Uniyal** — UI/UX & Streamlit Dashboard Development  
+- **Aarushi Agrawal** — Analytics & Visualization (Plotly, Pandas)  
+- **Anushka Negi** — Testing, Documentation & Integration  
+
+---
+
+## ▶️ Quick Start
+```bash
+git clone https://github.com/CrapeBell/human-behavior-recognition.git
+cd human-behavior-recognition
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
+
+## 📊 Dashboard Highlights
+- **Behavior Distribution**: Pie chart of detected actions  
+- **Emotion Distribution**: Bar chart of detected emotions  
+- **Recent Activity**: Log of last 10 detections  
+- **Session Stats**: Duration, FPS, unique behaviors & emotions  
+
+---
+
 
