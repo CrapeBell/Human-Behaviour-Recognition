@@ -1,5 +1,4 @@
 import streamlit as st
-import base64
 import cv2
 import numpy as np
 import pandas as pd
@@ -13,14 +12,6 @@ from emotion_engine import EmotionDetector
 from dashboard_metrics import AnalyticsTracker
 
 st.set_page_config(page_title="Human Behavior & Emotion Recognition", layout="wide")
-
-def get_base64_encoded_image(image_path):
-    with open(image_path, "rb") as img_file:
-        encoded = base64.b64encode(img_file.read()).decode()
-    return encoded
-
-icon_path = r"C:\Users\asus\Downloads\freepik__multi_emotions_person.png"
-icon_base64 = get_base64_encoded_image(icon_path)
 
 def add_custom_styles():
     st.markdown("""
@@ -116,9 +107,8 @@ def add_custom_styles():
 
 add_custom_styles()
 
-st.markdown(f'''
+st.markdown('''
 <h1 class="animated-title">
-  <img src="data:image/png;base64,{icon_base64}" style="width:96px; height:96px; vertical-align:middle; margin-right:12px;">
   Human Behavior & Emotion Recognition System
 </h1>
 ''', unsafe_allow_html=True)
