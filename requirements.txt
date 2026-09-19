@@ -5,6 +5,7 @@ streamlit==1.49.1
 numpy==1.26.4
 pandas==2.3.2
 plotly==6.3.0
+pytest==8.4.2
 
 # Computer vision and pose/face landmarks
 mediapipe==0.10.21
