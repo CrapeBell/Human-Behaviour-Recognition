@@ -9,7 +9,7 @@ pytest==8.4.2
 
 # Computer vision and pose/face landmarks
 mediapipe==0.10.21
-opencv-contrib-python==4.12.0.88
+opencv-contrib-python==4.11.0.86
 
 # MediaPipe compatibility
 protobuf==4.25.8
