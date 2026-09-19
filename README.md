@@ -24,28 +24,30 @@ The project is intended as a practical computer-vision prototype and learning pr
 
 ## How It Works
 
+The architecture below is intentionally centered so the main input and output stages line up with the combined processing branches:
+
 ```text
-Camera Input
-     │
-     ▼
-Frame Processing
-     │
-     ├───────────────┐
-     ▼               ▼
-Pose Analysis    Face Analysis
-     │               │
-     ▼               ▼
-Behavior Rules    Emotion Rules
-     │               │
-     └───────┬───────┘
-             ▼
-       Detection Results
-             │
-             ▼
-      Streamlit Dashboard
-             │
-             ▼
-        Session Analytics
+                         Camera Input
+                              │
+                              ▼
+                       Frame Processing
+                              │
+                 ┌────────────┴────────────┐
+                 ▼                         ▼
+           Pose Analysis              Face Analysis
+                 │                         │
+                 ▼                         ▼
+          Behavior Rules             Emotion Rules
+                 │                         │
+                 └────────────┬────────────┘
+                              ▼
+                     Detection Results
+                              │
+                              ▼
+                   Streamlit Dashboard
+                              │
+                              ▼
+                    Session Analytics
 ```
 
 ## Tech Stack
